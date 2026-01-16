@@ -7,9 +7,9 @@
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
@@ -20,18 +20,17 @@
     }
 
     header {
-      padding: 20px 30px;
-      border-bottom: 1px solid #1e293b;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      padding: 18px 28px;
+      border-bottom: 1px solid #1e293b;
     }
 
     header a {
       color: white;
       text-decoration: none;
-      font-weight: 700;
-      font-size: 1.2rem;
+      font-weight: 800;
+      font-size: 1.3rem;
     }
 
     .grid {
@@ -45,21 +44,21 @@
       background: #020617;
       border: 1px solid #1e293b;
       border-radius: 14px;
-      padding: 18px;
+      padding: 16px;
       text-align: center;
-      transition: transform 0.15s ease, border 0.15s ease;
       cursor: pointer;
+      transition: transform 0.15s ease, border-color 0.15s ease;
     }
 
     .card:hover {
-      transform: scale(1.04);
+      transform: scale(1.05);
       border-color: #3b82f6;
     }
 
     .card img {
       width: 100%;
       border-radius: 10px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .card h3 {
@@ -74,19 +73,25 @@
     <a href="index.html">BreakRoom</a>
   </header>
 
-  <div class="grid">
-    <div class="card" onclick="location.href='play.html?game=retro-bowl'">
-      <img src="https://via.placeholder.com/300x180" />
+  <main class="grid">
+    <div class="card" onclick="window.open('play.html?game=retro-bowl', '_blank')">
+      <img src="https://via.placeholder.com/300x180" alt="Retro Bowl" />
       <h3>Retro Bowl</h3>
     </div>
 
-    <div class="card" onclick="location.href='play.html?game=slope'">
-      <img src="https://via.placeholder.com/300x180" />
+    <div class="card" onclick="window.open('play.html?game=slope', '_blank')">
+      <img src="https://via.placeholder.com/300x180" alt="Slope" />
       <h3>Slope</h3>
     </div>
 
-    <div class="card" onclick="location.href='play.html?game=1v1lol'">
-      <img src="https://via.placeholder.com/300x180" />
+    <div class="card" onclick="window.open('play.html?game=1v1lol', '_blank')">
+      <img src="https://via.placeholder.com/300x180" alt="1v1.LOL" />
+      <h3>1v1.LOL</h3>
+    </div>
+  </main>
+</body>
+</html>
+
       <h3>1v1.LOL</h3>
     </div>
   </div>
