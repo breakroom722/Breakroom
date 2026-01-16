@@ -1,37 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Games – BreakyRoom</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BreakRoom — Games</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: #020617;
+      color: #f9fafb;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px 30px;
+      border-bottom: 1px solid #1e293b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .grid {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      padding: 18px;
+      text-align: center;
+      transition: transform 0.15s ease, border 0.15s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.04);
+      border-color: #3b82f6;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  </style>
 </head>
+
 <body>
-
-<header class="header">
-  <div class="logo">BreakyRoom</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="games.html">Games</a>
-    <a href="proxies.html">Proxies</a>
-  </nav>
-</header>
-
-<section class="games">
-  <h1>Games</h1>
-  <p>Click a game to play.</p>
+  <header>
+    <a href="index.html">BreakRoom</a>
+  </header>
 
   <div class="grid">
-    <a href="play.html?game=1" class="game">Slope</a>
-    <a href="play.html?game=2" class="game">Run 3</a>
-    <a href="play.html?game=3" class="game">1v1.lol</a>
-    <a href="play.html?game=4" class="game">Retro Bowl</a>
-    <a href="play.html?game=5" class="game">Shell Shockers</a>
-    <a href="play.html?game=6" class="game">Moto X3M</a>
-    <a href="play.html?game=7" class="game">Basketball Stars</a>
-    <a href="play.html?game=8" class="game">Cookie Clicker</a>
-  </div>
-</section>
+    <div class="card" onclick="location.href='play.html?game=retro-bowl'">
+      <img src="https://via.placeholder.com/300x180" />
+      <h3>Retro Bowl</h3>
+    </div>
 
+    <div class="card" onclick="location.href='play.html?game=slope'">
+      <img src="https://via.placeholder.com/300x180" />
+      <h3>Slope</h3>
+    </div>
+
+    <div class="card" onclick="location.href='play.html?game=1v1lol'">
+      <img src="https://via.placeholder.com/300x180" />
+      <h3>1v1.LOL</h3>
+    </div>
+  </div>
 </body>
 </html>
