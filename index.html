@@ -1,11 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>BreakyRoom</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BreakRoom</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: radial-gradient(circle at top, #0f172a, #020617);
+      color: #f9fafb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 650px;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-size: 1.25rem;
+      opacity: 0.85;
+      margin-bottom: 36px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 16px 32px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 14px;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-play {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .btn-play:hover {
+      background: #2563eb;
+      transform: scale(1.06);
+    }
+
+    .btn-proxy {
+      background: #111827;
+      border: 1px solid #334155;
+      color: #e5e7eb;
+    }
+
+    .btn-proxy:hover {
+      background: #1f2937;
+      transform: scale(1.06);
+    }
+
+    footer {
+      position: fixed;
+      bottom: 14px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.8rem;
+      opacity: 0.4;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>BreakyRoom</h1>
-  <p>Play games during break.</p>
+  <div class="container">
+    <h1>BreakRoom</h1>
+    <p>Games and tools for your break.</p>
+
+    <div class="buttons">
+      <a href="games.html" class="btn btn-play">Play Games</a>
+      <a href="proxy.html" class="btn btn-proxy">Proxies</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 BreakRoom
+  </footer>
 </body>
 </html>
