@@ -1,7 +1,58 @@
 body {
-  background: #0f172a;
-  color: white;
+  margin: 0;
   font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #020617;
+}
+
+.header a {
+  color: #e5e7eb;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.hero {
   text-align: center;
-  padding-top: 50px;
+  padding: 60px 20px;
+}
+
+.games {
+  padding: 30px;
+}
+
+.games h1 {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.game {
+  background: #1e293b;
+  padding: 30px 10px;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.game:hover {
+  background: #334155;
 }
