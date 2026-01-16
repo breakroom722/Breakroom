@@ -19,20 +19,34 @@
       min-height: 100vh;
     }
 
-    header {
+    /* NAVBAR */
+    nav {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      padding: 18px 28px;
+      padding: 16px 28px;
       border-bottom: 1px solid #1e293b;
     }
 
-    header a {
-      color: white;
-      text-decoration: none;
+    .logo {
       font-weight: 800;
       font-size: 1.3rem;
+      color: white;
+      text-decoration: none;
     }
 
+    .nav-links a {
+      margin-left: 22px;
+      color: #cbd5f5;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    /* GRID */
     .grid {
       padding: 30px;
       display: grid;
@@ -69,9 +83,13 @@
 </head>
 
 <body>
-  <header>
-    <a href="index.html">BreakRoom</a>
-  </header>
+  <nav>
+    <a href="index.html" class="logo">BreakRoom</a>
+    <div class="nav-links">
+      <a href="games.html">Games</a>
+      <a href="proxy.html">Proxies</a>
+    </div>
+  </nav>
 
   <main class="grid">
     <div class="card" onclick="window.open('play.html?game=retro-bowl', '_blank')">
@@ -89,11 +107,5 @@
       <h3>1v1.LOL</h3>
     </div>
   </main>
-</body>
-</html>
-
-      <h3>1v1.LOL</h3>
-    </div>
-  </div>
 </body>
 </html>
